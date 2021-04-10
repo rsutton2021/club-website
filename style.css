@@ -85,7 +85,7 @@ main {
 
 section {
     margin: 2rem;
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 4 / 2;
 }
 
 section img {
@@ -97,7 +97,7 @@ section img {
 aside {
     margin: 2rem;
     padding: 1rem;
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 2 / 4 / 3;
     background-color: gainsboro;
 }
 
@@ -125,4 +125,13 @@ aside a {
 
 aside a:hover {
     color: teal;
+}
+
+
+footer {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.7rem;
+    background-color: darkslategray;
+    color: whitesmoke;
 }
