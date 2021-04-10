@@ -18,6 +18,7 @@ p {
 a {
     color: black;
     text-decoration: none;
+    font-weight: bold;
   }
 
 
@@ -101,3 +102,16 @@ aside img {
     box-shadow: 5px 5px 5px grey;
 }
 
+aside hr {
+    margin: 1rem 0;
+    width: 95%;
+    border: 0.2rem solid darkslategray;
+}
+
+aside a {
+    color: darkslategray;
+}
+
+aside a:hover {
+    color: teal;
+}
