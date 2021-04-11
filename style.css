@@ -74,11 +74,15 @@ nav {
     text-align: left;
     width: 100%;
     position: absolute;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 
 }
 
 nav ul {
     list-style: none;
+    margin-top: 1rem;
 }
 
 nav li {
@@ -89,16 +93,58 @@ nav li {
 nav a {
     color: white;
     font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
     color: thistle;
 }
 
+.nav-toggle:checked ~ nav {
+    transform: scale(1 ,1);
 
-/* ===========================================
-13 mins into https://www.youtube.com/watch?v=8QKOaTYvYUA
-============================================== */ 
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media screen and (min-width: 601px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    div.desktop-nav {
+        margin: 1rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        /* display: grid;
+        grid-template: fr / repeat(6, fr);
+        grid: 1 / 1 / 2 / 7; */
+
+        
+    }
+
+    .desktop-nav ul {
+        list-style: none;
+    }
+ 
+}
+
+@media screen and (max-width: 600px) {
+    div.desktop-nav {
+        display: none;
+    }
+}
+
+
+
 
 
 /* MAIN */
